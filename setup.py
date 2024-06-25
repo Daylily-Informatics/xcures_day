@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="xcures_day",
-    version="0.0.2",
+    version="0.0.2.1",
     author="John Major",
     author_email="john@daylilyinformatics.com",
     description="python wrapper for the xcures REST api, found here https://partner.xcures.com/api-docs .",
@@ -14,9 +14,6 @@ setup(
     ],
     include_package_data=True,
     package_data={
-        'xcures': [
-            'bin/*',
-        ],
     },
     python_requires=">=3.10",
     install_requires=["pytest", "requests", "yaml_config_day", "pytz", "ipython"], 
